@@ -27,9 +27,34 @@ body,
 
 /* Footer color for sake of consistency with Navbar */
 .page-footer {
-  background-color: #f2a939; }
+  background-color: #60bea7; }
 
   .btn-primary-orange{
     background-color: #f2a939;
     color: #fff;
   }
+
+  .btn-primary-azul-claro{
+    background-color: #60bea7;
+    color: #fff;
+  }
+
+.color-pink{
+  color:#e9639a;
+}
+
+.bg-azul-claro{
+  background-color: #60bea7;
+}
+
+.bg-branco{
+  background-color: #fff;
+}
+
+.text-azul-claro{
+  color: #60bea7;
+}
+
+.text-preto{
+  color: #000;
+}
