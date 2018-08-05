@@ -10,6 +10,8 @@
   <title>Site Móveis Planejados</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
@@ -21,168 +23,78 @@
 
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 
-  <style type="text/css">
-    /* Necessary for full page carousel*/
-    html,
-    body,
-    header,
-    .view {
-      height: 100%;
-    }
-
-    /* Carousel*/
-    .carousel,
-    .carousel-item,
-    .carousel-item.active {
-      height: 100%;
-    }
-    .carousel-inner {
-      height: 100%;
-    }
-
-    @media (min-width: 800px) and (max-width: 850px) {
-      .navbar:not(.top-nav-collapse) {
-          background: #1C2331!important;
-      }
-  }
-
-  </style>
+  
 </head>
 
 <body>
 
-<!--Navbar-->
-<nav class="navbar fixed-top navbar-expand-lg navbar-light white">
+   <!--Double navigation-->
+   <header>
+    <!-- Sidebar navigation -->
+    <div id="slide-out" class="side-nav fixed" style="background:#60bea7;">
+        <ul class="custom-scrollbar">
+            <!-- Logo -->
+            <li>
+                <div class="logo-wrapper waves-light">
+                    <a href="#"><img src="img/logo.png" class="img-fluid flex-center"></a>
+                </div>
+            </li>
+            <!--/. Logo -->
+            <!--Search Form-->
+            <li>
+                <form class="search-form" role="search">
+                    <div class="form-group md-form mt-0 pt-1 waves-light">
+                        <input type="text" class="form-control" placeholder="Pesquisar">
+                    </div>
+                </form>
+            </li>
+            <!--/.Search Form-->
+            <!-- Side navigation links -->
+            <li>
+                <ul class="list-group list-group-flush collapsible collapsible-accordion">
+                    <li class="list-group-item"><a href="#" class="waves-effect" style="color:#000;">SHOWROOM</a>
+                    </li>
+                    <li class="list-group-item"><a href="#" class="waves-effect" style="color:#000;">PROJETOS</a>
+                    </li>
+                    <li class="list-group-item"><a href="#" class="waves-effect" style="color:#000;">ORÇAMENTO</a>
+                    </li>
+                    <li class="list-group-item"><a href="#" class="waves-effect" style="color:#000;">ASSISTÊNCIA</a>
+                    </li>
+                    <li class="list-group-item"><a href="#" class="waves-effect" style="color:#000;">CONTATO</a>
+                    </li>                                         
+                </ul>
+            </li>
+            <!--/. Side navigation links -->
+        </ul>
+        <div class="sidenav-bg mask-strong"></div>
+    </div>
+    <!--/. Sidebar navigation -->
 
-  <!-- Collapse button -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-      aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav" style="background:#fff;">
 
-  <!-- Collapsible content -->
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-      <!-- Links -->
-      <ul class="navbar-nav mr-auto">
-          <!-- Dropdown -->
-          <li class="nav-item dropdown mega-dropdown">
-              <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu </a>
-              <div class="dropdown-menu mega-menu row z-depth-1" aria-labelledby="navbarDropdownMenuLink">
-                  <div class="row">
-                      <div class="col-md-5 col-xl-3 sub-menu mt-5 mb-5 pl-4">
-                          <ol class="list-unstyled mx-4 dark-grey-text">
-                              <li class="sub-title text-uppercase mt-sm"><a class="menu-item" href="index.html">HOME</a></li>
-                              <li class="sub-title text-uppercase mt-sm"><a class="menu-item" href="">PROJETOS</a></li>
-                              <li class="sub-title text-uppercase"><a class="menu-item" href="">SHOWROOM</a></li>
-                              <li class="sub-title text-uppercase"><a class="menu-item" href="">ORÇAMENTO</a></li>
-                              <li class="sub-title text-uppercase"><a class="menu-item" href="">SOBRE</a></li>
-                              <li class="sub-title text-uppercase"><a class="menu-item" href="contato.html">CONTATO</a></li>
-                          </ol>
-                      </div>
-                      <div class="col-md-7 col-xl-9">
-                          <div class="row">
-                              <div class="col-xl-6 mt-5 mb-4 pr-5 clearfix d-none d-md-block">
-                                  <h6 class="sub-title p-sm mb-4 text-uppercase font-weight-bold dark-grey-text">DESTAQUE</h6>
-                                  <!--Featured image-->
-                                  <div class="view overlay pb-3">
-                                      <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(42).jpg" class="img-fluid z-depth-1" alt="First sample image">
-                                      <div class="mask rgba-white-slight flex-center">
-                                          <p></p>
-                                      </div>
-                                  </div>
-                                  <h4 class="mb-2"><a class="news-title" href="">Lorem ipsum dolor sit amet, consectetur isum adipisicing elit.</a></h4>
-                                  <p class="font-small text-uppercase text-muted">By <a class="m-sm" href="#!">Saulo</a> - Agosto 03, 2018</p>
-                              </div>
-                              <div class="col-xl-6 mt-5 mb-4 pr-5 clearfix d-none d-xl-block">
-                                  <h6 class="sub-title p-sm mb-4 text-uppercase font-weight-bold dark-grey-text">ÚLTIMAS</h6>
-                                  <div class="news-single">
-                                      <div class="row">
-                                          <div class="col-md-4">
-                                              <!--Image-->
-                                              <div class="view overlay z-depth-1">
-                                                  <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(43).jpg" class="img-fluid" alt="Minor sample post image">
-                                                  <div class="mask rgba-white-slight flex-center">
-                                                      <p></p>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <div class="col-md-8">
-                                              <a class="news-title smaller mb-1" href="#">Texto introdutorio para as postagens do blog</a>
-                                              <p class="font-small text-uppercase text-muted">Agosto 03, 2018</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="news-single">
-                                      <div class="row">
-                                          <div class="col-md-4">
-                                              <!--Image-->
-                                              <div class="view overlay z-depth-1">
-                                                  <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(44).jpg" class="img-fluid" alt="Minor sample post image">
-                                                  <div class="mask rgba-white-slight flex-center">
-                                                      <p></p>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <div class="col-md-8">
-                                              <a class="news-title smaller mb-1" href="#">Texto introdutorio para as postagens do blog.</a>
-                                              <p class="font-small text-uppercase text-muted">Agosto 03, 2018</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="news-single">
-                                      <div class="row">
-                                          <div class="col-md-4">
-                                              <!--Image-->
-                                              <div class="view overlay z-depth-1">
-                                                  <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(41).jpg" class="img-fluid" alt="Minor sample post image">
-                                                  <div class="mask rgba-white-slight flex-center">
-                                                      <p></p>
-                                                  </div>
-                                              </div>
-                                          </div>
-                                          <div class="col-md-8">
-                                              <a class="news-title smaller mb-1" href="#">Texto introdutorio para as postagens do blog</a>
-                                              <p class="font-small text-uppercase text-muted">Agosto 03, 2018</p>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </li>
-      </ul>
-      <!-- Links -->
-
-        <!-- Logo -->
-      <ul class="navbar-nav">
-          <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
-      </ul>
-
-      <!-- Links -->
-      <ul class="navbar-nav nav-flex-icons ml-auto">
-          <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-          </li>
-      </ul>
-      <!-- Links -->
-
-  </div>
-  <!-- Collapsible content -->
-
-</nav>
-<!--/.Navbar-->
+        <!-- SideNav slide-out button -->
+        <div class="float-left">
+            <a href="#" data-activates="slide-out" class="button-collapse black-text"><i class="fa fa-bars" style="color:#60bea7;"></i></a>
+        </div>
 
 
-  <!--Main layout-->
- <!--Main layout-->
- <main>
+
+        <ul class="nav navbar-nav nav-flex-icons ml-auto">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
+        </ul>        
+
+        <ul class="nav navbar-nav nav-flex-icons ml-auto">
+            <li><a href="#" class="fb-ic mx-2"><i class="fab fa-facebook" style="color:#60bea7;"> </i></a></li>
+            <li><a href="#" class="pin-ic mx-2"><i class="fab fa-instagram" style="color:#60bea7;"> </i></a></li>
+        </ul>
+    </nav>
+    <!-- /.Navbar -->
+</header>
+<!--/.Double navigation-->
+
+<!--Main layout-->
+<main>
 
         <!--======================= GOGGLE MAPS ======================= -->
 
@@ -370,10 +282,15 @@
   <!-- menu -->
   <script type="text/javascript" src="js/menu.js"></script>
   <!-- Initializations -->
-  <script type="text/javascript">
-    // Animations initialization
-    new WOW().init();
-  </script>
+  
+  <script>
+
+    // SideNav Initialization
+   $(".button-collapse").sideNav();
+   
+   new WOW().init();
+
+</script>
 </body>
 
 </html>
