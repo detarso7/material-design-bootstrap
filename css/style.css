@@ -58,3 +58,11 @@ body,
 .text-preto{
   color: #000;
 }
+
+a{
+  color:#322965;
+}
+
+a:hover{
+  color:#f2a939;
+}
